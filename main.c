@@ -15,7 +15,7 @@ void del_digit(char str[])
 }
 
 int main(void)
-{
+{ //数字でも良い
 	char str[100];
 	printf("文字列を入力してください：str = ");
 	fgets("%s",str);
