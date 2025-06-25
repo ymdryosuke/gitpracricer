@@ -18,7 +18,7 @@ int main(void)
 {
 	char str[100];
 	printf("文字列を入力してください：str = ");
-	scanf("%s",str);
+	fgets("%s",str);
 	
 	printf("数字の削除！\n");
 	
