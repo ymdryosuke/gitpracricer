@@ -29,7 +29,7 @@ int main(void)
 	// 入力末尾に改行が含まれていたら削除
 	str[strcspn(str, "\n")] = '\0';
 
-	//数字削除
+	
 	printf("数字の削除！\n");
 	
 	del_digit(str);
