@@ -19,7 +19,7 @@ int main(void)
 	char str[100];
 	printf("文字列を入力してください：str = ");
 	fgets("%s",str);
-	
+	//数字削除
 	printf("数字の削除！\n");
 	
 	del_digit(str);
