@@ -19,6 +19,16 @@ int main(void)
 	char str[100];
 	printf("文字列を入力してください：str = ");
 	fgets("%s",str);
+
+    // 改行だけ、または空行だった場合のチェック
+	if (str[0] == '\n' || strlen(str) == 0) {
+		printf("入力が空です。終了します。\n");
+		return 1;
+	}
+
+	// 入力末尾に改行が含まれていたら削除
+	str[strcspn(str, "\n")] = '\0';
+
 	//数字削除
 	printf("数字の削除！\n");
 	
