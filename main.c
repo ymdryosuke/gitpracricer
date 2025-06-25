@@ -17,7 +17,7 @@ void del_digit(char str[])
 int main(void)
 {
 	char str[100];
-	printf("文字列を入力してください（数字含んでOK）：str = ");
+	printf("文字列を入力してください：str = ");
 	scanf("%s",str);
 	
 	printf("数字の削除！\n");
