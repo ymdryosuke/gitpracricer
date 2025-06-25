@@ -15,10 +15,20 @@ void del_digit(char str[])
 }
 
 int main(void)
-{
+{ 
 	char str[100];
-	printf("文字列を入力してください（数字含んでOK）：str = ");
-	scanf("%s",str);
+	printf("文字列を入力してください：str = ");
+	fgets("%s",str);
+
+    // 改行だけ、または空行だった場合の
+	if (str[0] == '\n' || strlen(str) == 0) {
+		printf("入力が空です。終了します。\n");
+		return 1;
+	}
+
+	// 入力末尾に改行が含まれていたら削除
+	str[strcspn(str, "\n")] = '\0';
+
 	
 	printf("数字の削除！\n");
 	
