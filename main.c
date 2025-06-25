@@ -20,7 +20,7 @@ int main(void)
 	printf("文字列を入力してください：str = ");
 	fgets("%s",str);
 
-    // 改行だけ、または空行だった場合のチェック
+    // 改行だけ、または空行だった場合の
 	if (str[0] == '\n' || strlen(str) == 0) {
 		printf("入力が空です。終了します。\n");
 		return 1;
